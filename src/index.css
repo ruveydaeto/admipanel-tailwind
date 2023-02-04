@@ -6,6 +6,9 @@
   .header-icon {
     @apply w-6 h-6 cursor-pointer
   }
+  .nav-icon {
+    @apply w-6 h-6 cursor-pointer
+  }
 }
 
 body {

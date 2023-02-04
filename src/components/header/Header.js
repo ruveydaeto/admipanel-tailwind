@@ -5,8 +5,9 @@ export default function Header() {
   return (
     <div className='bg-[#F0F5F5] w-full py-6 items-center justify-between flex px-12'>
       <div className='w-full lg:flex hidden space-x-4 items-center justify-start py-2'>
+      <MagnifyingGlassIcon className="w-4 h-4"/>
 <input type="text" placeholder= "search" className= "bg-transparent outline-none " />
-<MagnifyingGlassIcon className="w-4 h-4"/>
+
 
       </div>
 
