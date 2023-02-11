@@ -24,7 +24,7 @@ export default function Navbar() {
     </div>
     <p> Pick an investment strategy that reflexts your goals</p>
     
-<button className='w-full py-2 px-3 bg-black text-white'>Pro</button>
+<button className='w-full py-2 px-3 bg-green-400 text-white'>Pro</button>
 </div>
 
 

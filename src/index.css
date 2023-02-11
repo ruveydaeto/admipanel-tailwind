@@ -9,6 +9,9 @@
   .nav-icon {
     @apply w-6 h-6 cursor-pointer
   }
+  .invest-icon {
+    @apply  h-6 stroke-gray-600
+  }
 }
 
 body {

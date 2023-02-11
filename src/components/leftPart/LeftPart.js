@@ -1,4 +1,7 @@
 import React from 'react'
+import InvestItem from "./InvestItem";
+import { InvestDB } from "./utils/InvestmentsDB";
+
 
 export default function leftPart() {
   return (
@@ -9,9 +12,9 @@ export default function leftPart() {
         <p className='  text-md text-gray-800'>
           Fin all of your investment information on a card
         </p>
-        <div className='items-start justify-start flex flex-col px-6 pt-8 pb-4 bg-[#89F887] mt-6 w-full'>
+        <div className='items-start justify-start flex flex-col px-6 pt-8 pb-4 bg-green-400 mt-6 w-full'>
 <h1>Ruveyda Eto</h1>
-<h1 className='text-3xl xl:text-5xl font-bold py-6'>02963648292 </h1> 
+<h1 className='text-3xl xl:text-5xl font-bold py-6'>$2963648292 </h1> 
 
         </div>
 
@@ -29,6 +32,18 @@ export default function leftPart() {
 
       </div>
       
+
+      <div className='w-full items-center justify-start flex flex-col px-12 py-6'>
+        <h1 className='font-bold text-ml xl:text-2xl pb-2'>
+          Recent investment
+        </h1>
+        <div className='w-full space-y-5 overflow-y-auto max-h-[350px] py-6 '>
+          {InvestDB.map((item) => (
+<InvestItem item={item} keys={item.id}/>
+          ))}
+
+        </div>
+      </div>
       </div>
   )
 }
